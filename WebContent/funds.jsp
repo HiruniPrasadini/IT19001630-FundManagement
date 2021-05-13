@@ -19,7 +19,7 @@
 				<form id="formFund" name="formFund" method="post" action="funds.jsp">
 
 					Name: <input id="fundName" name="fundName" type="text"
-						class="form-control form-control-lg"><br> Research: <input
+						class="form-control form-control-lg "><br> Research: <input
 						id="fundResearch" name="fundResearch" type="text"
 						class="form-control form-control-lg"><br> Type:<input
 						id="fundType" name="fundType" type="text"
