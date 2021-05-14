@@ -106,6 +106,9 @@ public class Fund {
 		return output;
 	}
 
+	
+	//----------------------------------------------------Update------------------------------------------------	
+	
 	public String updateFund(String ID, String name, String research, String type, String amount, String Desc,
 			String date)
 
@@ -141,6 +144,8 @@ public class Fund {
 		return output;
 	}
 
+	//----------------------------------------------------Delete------------------------------------------------	
+	
 	public String deleteFund(String fundID) {
 		String output = "";
 		try {
