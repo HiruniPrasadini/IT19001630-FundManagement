@@ -84,8 +84,7 @@ public class Fund {
 				String fundDate = rs.getString("fundDate");
 
 				// Add into the html table
-				output += "<tr><td><input id='hidFundIDUpdate' name='hidFundIDUpdate' type='hidden' value= '" + fundID
-						+ "'>" + funderName + "</td>";
+				output += "<tr><td><input id='hidFundIDUpdate' name='hidFundIDUpdate' type='hidden' value= '" + fundID + "'>" + funderName + "</td>";
 				output += "<td>" + fundResearch + "</td>";
 				output += "<td>" + paymentType + "</td>";
 				output += "<td>" + fundAmount + "</td>";
