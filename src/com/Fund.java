@@ -142,7 +142,7 @@ public class Fund {
 		return output;
 	}
 
-	public String deleteItem(String fundID) {
+	public String deleteFund(String fundID) {
 		String output = "";
 		try {
 			Connection con = connect();

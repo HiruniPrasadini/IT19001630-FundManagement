@@ -27,6 +27,7 @@
 						
 					Type:<input id="fundType" name="fundType" type="text"
 						class="form-control form-control-lg"><br> 
+						
 					Amount: <input id="fundAmount" name="fundAmount" type="text"
 						class="form-control form-control-lg"><br>
 						

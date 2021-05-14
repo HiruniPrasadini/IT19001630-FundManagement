@@ -70,7 +70,7 @@ public class FundsAPI extends HttpServlet {
 			 throws ServletException, IOException
 			{
 			 Map paras = getParasMap(request);
-			 String output = fundObj.deleteItem(paras.get("fundID").toString());
+			 String output = fundObj.deleteFund(paras.get("fundID").toString());
 			response.getWriter().write(output);
 			}
 	
