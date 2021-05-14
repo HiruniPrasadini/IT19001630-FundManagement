@@ -63,7 +63,7 @@ function onFundSaveComplete(response, status) {
 
 // UPDATE==========================================
 $(document).on("click", ".btnUpdate", function(event) {
-	$("#hidFundIDSave").val($(this).data("fundid"));
+	$("#hidFundIDSave").val($(this).closest("tr").find('#hidFundIDUpdate').val());
 	$("#fundName").val($(this).closest("tr").find('td:eq(0)').text());
 	$("#fundResearch").val($(this).closest("tr").find('td:eq(1)').text());
 	$("#fundType").val($(this).closest("tr").find('td:eq(2)').text());
@@ -112,39 +112,39 @@ function onFundDeleteComplete(response, status) {
 
 // CLIENT-MODEL================================================================
 function validateFundForm() {
-	// CODE
+	// Name
 	if ($("#fundName").val().trim() == "") {
-		return "Insert Item Code.";
+		return "Insert Funder Name.";
 	}
-	// NAME
+	// Research
 	if ($("#fundResearch").val().trim() == "") {
-		return "Insert Item Name.";
+		return "Insert Funding Research.";
 	}
 
-	// NAME
+	//Type
 	if ($("#fundType").val().trim() == "") {
-		return "Insert Item Name.";
+		return "Insert Payment Type.";
 	}
 
 	// PRICE-------------------------------
 	if ($("#fundAmount").val().trim() == "") {
-		return "Insert Item Price.";
+		return "Insert Fund Amount.";
 	}
 	// is numerical value
 	var tmpPrice = $("#fundAmount").val().trim();
 	if (!$.isNumeric(tmpPrice)) {
-		return "Insert a numerical value for Item Price.";
+		return "Insert a numerical value for Funding Amount.";
 	}
 	// convert to decimal price
 	$("#fundAmount").val(parseFloat(tmpPrice).toFixed(2));
 	// DESCRIPTION------------------------
 	if ($("#fundDesc").val().trim() == "") {
-		return "Insert Item Description.";
+		return "Insert Description.";
 	}
 
-	// DESCRIPTION------------------------
+	// Date------------------------
 	if ($("#fundDate").val().trim() == "") {
-		return "Insert Item Description.";
+		return "Insert Fund Date.";
 	}
 	return true;
 }

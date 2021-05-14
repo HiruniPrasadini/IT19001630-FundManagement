@@ -2,6 +2,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,20 +20,26 @@
 				<form id="formFund" name="formFund" method="post" action="funds.jsp">
 
 					Name: <input id="fundName" name="fundName" type="text"
-						class="form-control form-control-lg "><br> Research: <input
-						id="fundResearch" name="fundResearch" type="text"
-						class="form-control form-control-lg"><br> Type:<input
-						id="fundType" name="fundType" type="text"
-						class="form-control form-control-lg"><br> Amount: <input
-						id="fundAmount" name="fundAmount" type="text"
+						class="form-control form-control-lg "><br>
+						
+					Research: <input id="fundResearch" name="fundResearch" type="text"
+						class="form-control form-control-lg"><br> 
+						
+					Type:<input id="fundType" name="fundType" type="text"
+						class="form-control form-control-lg"><br> 
+					Amount: <input id="fundAmount" name="fundAmount" type="text"
 						class="form-control form-control-lg"><br>
+						
 					Description: <input id="fundDesc" name="fundDesc" type="text"
-						class="form-control form-control-lg"> <br> Date: <input
-						id="fundDate" name="fundDate" type="text"
-						class="form-control form-control-lg"><br> <input
-						id="btnSave" name="btnSave" type="button" value="Save"
-						class="btn btn-primary"> <input type="hidden"
-						id="hidFundIDSave" name="hidFundIDSave" value="">
+						class="form-control form-control-lg"> <br>
+						 
+					Date: <input id="fundDate" name="fundDate" type="text"
+						class="form-control form-control-lg"><br>
+						 
+					<input id="btnSave" name="btnSave" type="button" value="Save"
+						class="btn btn-primary">
+						 
+					<input type="hidden" id="hidFundIDSave" name="hidFundIDSave" value="">
 
 				</form>
 
