@@ -66,8 +66,8 @@ public class Fund {
 				return "Error while connecting to the database for reading.";
 			}
 			// Prepare the html table to be displayed
-			output = "<table border='1'><tr><th>Funder Name</th><th>Reaserch</th>" + "<th>Payment Type</th>"
-					+ "<th>Amount</th>" + "<th>Description</th>" + "<th>Date</th>"
+			output = "<table border='1' class='table table-bordered'><tr><th class='text-center'>Funder Name</th><th class='text-center'>Reaserch</th>" + "<th class='text-center'>Payment Type</th>"
+					+ "<th class='text-center'>Amount</th>" + "<th class='text-center'>Description</th>" + "<th class='text-center'>Date</th>"
 					+ "<th>Update</th><th>Remove</th></tr>";
 
 			String query = "select * from fund";
